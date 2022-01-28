@@ -1,0 +1,304 @@
+/* CONFIGURACIONES GLOBALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: rgb(5, 5, 5);
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+
+/* CONTENEDOR */
+
+.contenedor {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contenedorT {
+    background-color: aliceblue;
+    color: rgb(67, 116, 117);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedorT h3 {
+    padding: 20px;
+}
+
+
+/* HEADER */
+
+.header {
+    /* background-color: rgba(255, 235, 205, 0.658); */
+    position: fixed;
+    top: 5px;
+    left: 70px;
+    width: 25%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-transform: uppercase;
+    text-shadow: rgb(88, 45, 45) 0 0 5px, rgb(11, 136, 173) 1px 1px 7px, rgb(60, 14, 104)1px -1px 4px, rgb(9, 7, 10)2px 2px 4px, rgb(9, 7, 10)-2px -2px 4px;
+    animation: neon 10s infinite;
+    transform: perspective(400px) rotateY(43deg) rotateZ(-2deg);
+}
+
+.header span {
+    color: rgb(76, 137, 252);
+    letter-spacing: 5px;
+    text-shadow: rgb(9, 6, 12) 1px 1px 3px, rgb(9, 6, 12) -1px -1px 3px, rgb(9, 6, 12) 1px 1px 3px;
+}
+
+.header h2 {
+    padding: 30px;
+}
+
+ul {
+    /* background-color: rgba(0, 0, 139, 0.171); */
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.caminos {
+    padding: 10px;
+    cursor: pointer;
+    text-shadow: rgb(34, 24, 24) 0 0 2px, rgb(34, 24, 24) -1px -1px 3px, rgb(34, 24, 24) 2px 2px 4px, rgb(24, 5, 56) -2px -2px 4px, rgb(32, 8, 71) -2px -2px 14px;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: rgb(15, 14, 14) 0 0 5px, rgb(11, 136, 173) 1px 1px 7px, rgb(60, 14, 104)-1px -1px 3px;
+    }
+    15% {
+        text-shadow: rgb(49, 95, 245) 0 0 5px, rgb(58, 207, 252) 1px 1px 7px, rgb(60, 14, 104)-1px -1px 3px;
+    }
+    25% {
+        color: rgb(240, 242, 252);
+        text-shadow: rgba(8, 7, 7, 0.699) 0 0 5px, rgb(58, 207, 252) 1px 1px 7px, rgb(60, 14, 104)-1px -1px 3px;
+    }
+    50% {
+        text-shadow: rgb(49, 95, 245) 0 0 5px, rgb(58, 207, 252) 1px 1px 7px, rgb(60, 14, 104)-1px -1px 3px;
+    }
+    70% {
+        text-shadow: rgb(15, 14, 14) 0 0 5px, rgb(11, 136, 173) 1px 1px 7px, rgb(60, 14, 104)-1px -1px 3px;
+    }
+    100% {
+        color: rgba(240, 242, 252, 0.945);
+        text-shadow: rgba(8, 7, 7, 0.699) 0 0 5px, rgb(58, 207, 252) 1px 1px 7px, rgb(60, 14, 104)-1px -1px 3px;
+    }
+}
+
+
+/* LA GALERIA */
+
+.le_galery {
+    /* background-color: cornflowerblue; */
+    position: fixed;
+    top: 20%;
+    left: 26%;
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+
+/* QUIEN SOY */
+
+.about_me {
+    background-image: linear-gradient(90deg, rgb(201, 227, 250), rgba(240, 248, 255, 0.411));
+    padding: 10px;
+    line-height: 1.4rem;
+    display: flex;
+    overflow-y: scroll;
+    border-radius: 5px;
+    animation: suavizado 1s ease-in-out;
+}
+
+.perfil_text {
+    width: 60%;
+}
+
+.perfil_img {
+    width: 40%;
+}
+
+
+/* HABILIDADES */
+
+.skills {
+    background-image: linear-gradient(90deg, rgb(201, 227, 250), rgba(240, 248, 255, 0.411));
+    padding: 10px;
+    display: flex;
+    line-height: 1.4rem;
+    overflow-y: scroll;
+    border-radius: 5px;
+    animation: suavizado 1s ease-in-out;
+}
+
+.skills_text {
+    width: 60%;
+}
+
+.skills_img {
+    width: 40%;
+    position: fixed;
+    left: 55%;
+}
+
+
+/* TARJETERO */
+
+.tarjetero {
+    /* height: 95vh; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    animation: suavizado 1s ease-in-out;
+}
+
+
+/* tarjetas alan_cadrs*/
+
+.alan_card {
+    background-color: rgba(10, 9, 8, 0.836);
+    width: 40%;
+    position: relative;
+    padding: 5px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: inset darkgray 1px 1px 5px, darkgray 1px 1px 7px;
+}
+
+.alan_card:hover {
+    box-shadow: darkgray 1px 1px 10px, rgb(10, 151, 207) 1px 1px 10px;
+}
+
+.alan_img {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.alan_text {
+    background-color: rgba(6, 23, 27, 0.774);
+    box-shadow: inset darkgray 0 0 2px, darkgray 0 0 3px;
+    width: 80%;
+    padding: 10px;
+    margin: 10px auto;
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+    z-index: 100;
+    color: darkgray;
+    font-size: 1.2rem;
+    opacity: 5%;
+    transition: ease-in-out .7s;
+}
+
+.alan_text:hover {
+    opacity: 100%;
+}
+
+.obra {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+
+/* CONTACTAME */
+
+.le_contacts {
+    /* background-color: rgba(255, 235, 205, 0.658); */
+    position: fixed;
+    padding: 10px;
+    top: 6px;
+    right: 0;
+    width: 15%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-transform: uppercase;
+    text-shadow: rgb(9, 245, 9) 0 0 5px, rgb(11, 173, 19) 1px 1px 7px, rgb(6, 245, 105)1px -1px 4px, rgb(9, 7, 10)2px 2px 4px, rgb(9, 7, 10)-2px -2px 4px;
+    animation: neon 10s infinite;
+    transform: perspective(400px) rotateY(-43deg) rotateZ(0deg);
+}
+
+.le_contacts h3 {
+    margin-bottom: 20px;
+}
+
+.le_contacts h5 {
+    padding: 5px;
+}
+
+.le_cuadre {
+    background-color: rgba(0, 0, 0, 0.308);
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: inset black 0 0 5px, rgb(9, 202, 250) 0 0 5px;
+}
+
+.le_cuadre a {
+    color: chartreuse;
+}
+
+
+/* FOOTER */
+
+.footer {
+    color: cornflowerblue;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+}
+
+@keyframes suavizado {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
